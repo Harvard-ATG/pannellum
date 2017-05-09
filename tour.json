@@ -26,7 +26,10 @@
                     "text": "Formal Entrance",
                     "sceneId": "lu_fam-formal_entrance"
                 }
-            ]
+            ],
+            "map": {
+                "position": "420,730"
+            }
         },
 
         "lu_fam-formal_entrance": {
@@ -50,7 +53,10 @@
                     "sceneId": "lu_fam-street_to_compound"
                 }
 
-            ]
+            ],
+            "map": {
+                "position": "400,600"
+            }
         },
 
         "lu_fam-daifu_di": {

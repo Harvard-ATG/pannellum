@@ -27,31 +27,21 @@
     </style>
 </head>
 <body>
+    <!-- Holds the panorama. Controlled by the pannellum library -->
+    <div id="panorama"></div>
 
-<div id="panorama"></div>
-<div id="map"><div>
+    <!-- Holds the SVG map. Controlled by the custom map.js application -->
+    <div id="map">
+        <object id="mapsvg" data="map.svg" type="image/svg+xml"></object>
+    <div>
 
-<script>
-$.getJSON('tour.json', function(tour) {
-  console.log("loaded data", tour);
-  var config = tour;
-
-  $(document).ready(function() {
-    var viewer = pannellum.viewer('panorama', config);
-    console.log("Pannellum viewer: ", viewer);
-
-    viewer.on('load', function() {
-      console.log("Loaded pannellum.");
+    <!-- Custom JS to connect the panorama to the map -->
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript">
+    App.run({
+        panoramaConfig: 'tour.json',
+        mapSvgId: "mapsvg",
     });
-
-    viewer.on('scenechange', function(sceneId) {
-      console.log("Scene: " + sceneId, "Pitch: " + viewer.getPitch(), "Yaw: " + viewer.getYaw(), "Config: ", viewer.getConfig());
-      $("#map").html("Map for scene:<br><b>"+sceneId+"</b>");
-    });
-
-  });
-});
-</script>
-
+    </script>
 </body>
 </html>
