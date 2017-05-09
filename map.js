@@ -78,7 +78,7 @@ window.App = (function($, pannellum) {
 			shape.setAttributeNS(null, "fill", "red");
 			svg.appendChild(shape);
 			self.svgMarker = shape;
-			}
+		}
 	};
 	App.prototype.showSvgMarker = function(display) {
 		if(self.svgMarker) {
