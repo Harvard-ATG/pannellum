@@ -1,0 +1,238 @@
+﻿{
+    "default": {
+        "author": "Peter Bol & Michael Szonyi",
+        "firstScene": "lu_fam-street_to_compound",
+        "sceneFadeDuration": 2000,
+        "autoLoad": true,
+        "fallback": "",
+        "minPitch": -35,
+        "maxPitch": 35,
+        "compass": true,
+        "hotSpotDebug": true
+    },
+
+    "scenes": {
+
+        "lu_fam-street_to_compound": {
+            "title": "Street to Lu Family Compound",
+            "panorama": "./panos/lu_fam-street_to_compound.jpg",
+            "northOffset": 40,
+            "yaw": 238,
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 238,
+                    "type": "scene",
+                    "text": "Formal Entrance",
+                    "sceneId": "lu_fam-formal_entrance"
+                }
+            ]
+        },
+
+        "lu_fam-formal_entrance": {
+            "title": "Lu Family Compound, Formal Entrance",
+            "panorama": "./panos/lu_fam-formal_entrance.jpg",
+            "northOffset": 40,
+            "yaw": -161,
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": -161,
+                    "type": "scene",
+                    "text": "His Lordship's Mansion, Daifu Di",
+                    "sceneId": "lu_fam-daifu_di"
+                },
+                {
+                    "pitch": -7,
+                    "yaw": 97,
+                    "type": "scene",
+                    "text": "Street to Lu Family Compound",
+                    "sceneId": "lu_fam-street_to_compound"
+                }
+
+            ]
+        },
+
+        "lu_fam-daifu_di": {
+            "title": "His Lordship's Mansion, Daifu Di",
+            "panorama": "./panos/lu_fam-daifu_di.jpg",
+            "northOffset": 40,
+            "yaw": -96,
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -96,
+                    "type": "scene",
+                    "text": "Head Gate/Victory Report Gate, Jiebao Men",
+                    "sceneId": "lu_fam-jiebao_men"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -181,
+                    "type": "scene",
+                    "text": "His Lordship's Mansion, Daifu Di",
+                    "sceneId": "lu_fam-daifu_di"
+                },
+                {
+                    "pitch": -7,
+                    "yaw": -4,
+                    "type": "scene",
+                    "text": "East Chanting Hall, Dongyin Tang  東吟堂",
+                    "sceneId": "lu_fam-dongyin_tang"
+                },
+                {
+                    "pitch": -7,
+                    "yaw": -9,
+                    "type": "scene",
+                    "text": "Planting Virtue Front Hall  樹德堂",
+                    "sceneId": "lu_fam-planting_virtue_front"
+                },
+                {
+                    "pitch": -7,
+                    "yaw": -14,
+                    "type": "scene",
+                    "text": "Virtue Through the Generations Gateway, Shide Menfang  世德門坊",
+                    "sceneId": "lu_fam-shide_mengfang"
+                }
+
+            ]
+        },
+
+        "lu_fam-jiebao_men": {
+            "title": "Head Gate/Victory Report Gate, Jiebao Men",
+            "panorama": "./panos/lu_fam-jiebao_men.jpg",
+            "northOffset": 40,
+            "yaw": 151,
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -115,
+                    "type": "scene",
+                    "text": "His Lordship's Mansion, Daifu Di",
+                    "sceneId": "lu_fam-daifu_di"
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 151,
+                    "type": "scene",
+                    "text": "Ceremonial Gate/Glory of the Nation Gate, Guoguang Men",
+                    "sceneId": "lu_fam-guoguang_men"
+                }
+
+            ]
+        },
+
+        "lu_fam-dongyin_tang": {
+            "title": "East Chanting Hall, Dongyin Tang  東吟堂",
+            "panorama": "./panos/lu_fam-dongyin_tang.jpg",
+            "northOffset": 40,
+            "yaw": 175,
+            "hotSpots": [
+              {
+                  "pitch": -7,
+                  "yaw": -98,
+                  "type": "scene",
+                  "text": "His Lordship's Mansion, Daifu Di",
+                  "sceneId": "lu_fam-daifu_di"
+              },
+              {
+                  "pitch": -7,
+                  "yaw": -93,
+                  "type": "scene",
+                  "text": "Planting Virtue Front Hall  樹德堂",
+                  "sceneId": "lu_fam-planting_virtue_front"
+              }
+            ]
+        },
+
+        "lu_fam-planting_virtue_front": {
+            "title": "Planting Virtue Front Hall  樹德堂",
+            "panorama": "./panos/lu_fam-planting_virtue_front.jpg",
+            "northOffset": -40,
+            "yaw": -123,
+            "hotSpots": [
+              {
+                  "pitch": -7,
+                  "yaw": 55,
+                  "type": "scene",
+                  "text": "East Chanting Hall, Dongyin Tang  東吟堂",
+                  "sceneId": "lu_fam-dongyin_tang"
+              },
+              {
+                  "pitch": -7,
+                  "yaw": 60,
+                  "type": "scene",
+                  "text": "His Lordship's Mansion, Daifu Di",
+                  "sceneId": "lu_fam-daifu_di"
+              },
+              {
+                  "pitch": -7,
+                  "yaw": 65,
+                  "type": "scene",
+                  "text": "Virtue Through the Generations Gateway, Shide Menfang  世德門坊",
+                  "sceneId": "lu_fam-shide_mengfang"
+              }
+            ]
+        },
+
+        "lu_fam-shide_mengfang": {
+            "title": "Virtue Through the Generations Gateway, Shide Menfang  世德門坊",
+            "panorama": "./panos/lu_fam-shide_mengfang.jpg",
+            "northOffset": 40,
+            "yaw": 170,
+            "hotSpots": [
+              {
+                  "pitch": -10,
+                  "yaw": -80,
+                  "type": "scene",
+                  "text": "His Lordship's Mansion, Daifu Di",
+                  "sceneId": "lu_fam-daifu_di"
+              },
+              {
+                  "pitch": -10,
+                  "yaw": -85,
+                  "type": "scene",
+                  "text": "Planting Virtue Front Hall  樹德堂",
+                  "sceneId": "lu_fam-planting_virtue_front"
+              },
+              {
+                  "pitch": -10,
+                  "yaw": -90,
+                  "type": "scene",
+                  "text": "Virtue Through the Generations Gateway, Shide Menfang  世德門坊",
+                  "sceneId": "lu_fam-shide_mengfang"
+              },
+              {
+                  "pitch": -10,
+                  "yaw": 170,
+                  "type": "scene",
+                  "text": "Planting Virtue Hall  樹德堂",
+                  "sceneId": "lu_fam-planting_virtue"
+              }
+            ]
+        },
+
+        "lu_fam-planting_virtue": {
+            "title": "Planting Virtue Hall  樹德堂",
+            "panorama": "./panos/lu_fam-planting_virtue.jpg",
+            "northOffset": 40,
+            "yaw": 175,
+            "hotSpots": [
+              {
+                  "pitch": -7,
+                  "yaw": -98,
+                  "type": "scene",
+                  "text": "His Lordship's Mansion, Daifu Di",
+                  "sceneId": "lu_fam-daifu_di"
+              },
+              {
+                  "pitch": -7,
+                  "yaw": -93,
+                  "type": "scene",
+                  "text": "Planting Virtue Front Hall  樹德堂",
+                  "sceneId": "lu_fam-planting_virtue_front"
+              }
+            ]
+        }
+    }
+}
