@@ -71,20 +71,20 @@ window.App = (function($, pannellum) {
 			shape.setAttributeNS(null, "cx", params.x);
 			shape.setAttributeNS(null, "cy", params.y);
 		} else {
-            shape = svgDocument.createElementNS(svgNamespace, "circle");
+			shape = svgDocument.createElementNS(svgNamespace, "circle");
 			shape.setAttributeNS(null, "cx", params.x);
 			shape.setAttributeNS(null, "cy", params.y);
 			shape.setAttributeNS(null, "r",  15);
 			shape.setAttributeNS(null, "fill", "red");
 			svg.appendChild(shape);
-            self.svgMarker = shape;
+			self.svgMarker = shape;
         }
 	};
 	App.prototype.showSvgMarker = function(display) {
 		if(self.svgMarker) {
 			self.svgMarker.setAttributeNS(null, "display", display ? "" : "none");
 		}
-	}
+	};
 
 	return App;
 })(jQuery, pannellum);
