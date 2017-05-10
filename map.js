@@ -56,9 +56,8 @@ window.App = (function($, pannellum) {
 		if ('map' in scene) {
 			position = scene.map.position.split(",");
 			self.drawSvgMarker({ x: position[0], y: position[1] });
-		} else {
-			self.showSvgMarker(false);
 		}
+		self.showSvgMarker('map' in scene);
 	};
 	App.prototype.drawSvgMarker = function(params) {
 		var svgDocument = this.svgDocument;
