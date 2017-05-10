@@ -4,7 +4,7 @@ window.App = (function($, pannellum) {
 	var App = function(config) {
 		this.config = config || {};
 		this.config.mapSvgId = this.config.mapSvgId || 'mapsvg';
-		this.config.panoramaConfig - this.config.panoramaConfig || 'tour.json';
+		this.config.panoramaConfig = this.config.panoramaConfig || 'tour.json';
 		this.panoramaData = null;
 		this.panoramaSceneId = null;
 		this.onDocumentLoaded = this.onDocumentLoaded.bind(this);
